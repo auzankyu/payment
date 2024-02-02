@@ -49,7 +49,7 @@ We will implement business requirements in a maintainable, scalable and testable
 Run `pod install`
 - this apps can run both using simulator and device (for simulator will skip the qrcode scanner)
 - apps know that our balance is less than the price of the item from the merchant.
-- note that we are using a dummy data (for example our total balance that we have)
+- note that we are using a dummy data using .json file for user profile (include balance that we have) and charts
 
 # Scan this QRCode
 | QRCode Example 1 | QRCode Example 2 | QRCode Example 3 | 
