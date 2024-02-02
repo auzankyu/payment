@@ -60,7 +60,7 @@ class HomeViewController: UIViewController {
         container.paymentHandler = { [weak self] in
             
             #if targetEnvironment(simulator)
-            let code = "BNI.ID1234567899.MERCHANT TOKOPEDIA.100000"
+            let code = "BNI.ID1234567899.MERCHANT MOCK TEST.50000"
             let vmDebug = QRCodeViewModel()
 
             vmDebug.dataProcced(with: code) { result in
