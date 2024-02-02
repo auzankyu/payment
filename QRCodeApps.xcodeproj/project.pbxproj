@@ -3,27 +3,109 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B947A1BD2B69247500726C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1BC2B69247500726C68 /* AppDelegate.swift */; };
 		B947A1BF2B69247500726C68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1BE2B69247500726C68 /* SceneDelegate.swift */; };
-		B947A1C12B69247500726C68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1C02B69247500726C68 /* ViewController.swift */; };
-		B947A1C42B69247500726C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B947A1C22B69247500726C68 /* Main.storyboard */; };
+		B947A1C12B69247500726C68 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1C02B69247500726C68 /* MainTabViewController.swift */; };
 		B947A1C62B69247700726C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B947A1C52B69247700726C68 /* Assets.xcassets */; };
 		B947A1C92B69247700726C68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B947A1C72B69247700726C68 /* LaunchScreen.storyboard */; };
+		B947A1DE2B69279900726C68 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1DD2B69279900726C68 /* HomeViewController.swift */; };
+		B947A1E02B6927A100726C68 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1DF2B6927A100726C68 /* HistoryViewController.swift */; };
+		B947A1E22B6929BD00726C68 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1E12B6929BD00726C68 /* Profile.swift */; };
+		B947A1E62B692A0F00726C68 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1E52B692A0F00726C68 /* HomeViewModel.swift */; };
+		B947A1E92B692CF900726C68 /* APIClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1E82B692CF900726C68 /* APIClientManager.swift */; };
+		B947A1EB2B692D6600726C68 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1EA2B692D6600726C68 /* Endpoint.swift */; };
+		B947A1ED2B692DCC00726C68 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1EC2B692DCC00726C68 /* MockAPIClient.swift */; };
+		B947A1EF2B692E7900726C68 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1EE2B692E7900726C68 /* NetworkError.swift */; };
+		B947A1F22B692F4100726C68 /* InjectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1F12B692F4100726C68 /* InjectionManager.swift */; };
+		B947A1F52B692F7500726C68 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1F42B692F7500726C68 /* Injectable.swift */; };
+		B947A1F72B692FD200726C68 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1F62B692FD200726C68 /* AppDependencies.swift */; };
+		B947A1FC2B6930E400726C68 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1FB2B6930E400726C68 /* HomeRepository.swift */; };
+		B947A1FE2B69312D00726C68 /* HomeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A1FD2B69312D00726C68 /* HomeEndpoint.swift */; };
+		B947A2012B693C6600726C68 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A2002B693C6600726C68 /* CardView.swift */; };
+		B947A2032B693DB000726C68 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A2022B693DB000726C68 /* UIColor+Ext.swift */; };
+		B947A2052B693F2100726C68 /* ProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A2042B693F2100726C68 /* ProfileCard.swift */; };
+		B947A20C2B6942F400726C68 /* UtilsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A20B2B6942F400726C68 /* UtilsManager.swift */; };
+		B947A20E2B694ED500726C68 /* CButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A20D2B694ED500726C68 /* CButton.swift */; };
+		B947A2102B6952E900726C68 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A20F2B6952E900726C68 /* HomeView.swift */; };
+		B947A2152B69EE7B00726C68 /* ScannerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A2142B69EE7B00726C68 /* ScannerManager.swift */; };
+		B947A2192B69F47600726C68 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A2182B69F47600726C68 /* QRCodeViewController.swift */; };
+		B9F87F512B6A082A008F7C3B /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87F502B6A082A008F7C3B /* TransactionViewController.swift */; };
+		B9F87F532B6A0EE0008F7C3B /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87F522B6A0EE0008F7C3B /* TransactionViewModel.swift */; };
+		B9F87F562B6A0F58008F7C3B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87F552B6A0F58008F7C3B /* Transaction.swift */; };
+		B9F87F592B6A0FE7008F7C3B /* QRCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87F582B6A0FE7008F7C3B /* QRCodeViewModel.swift */; };
+		B9F87F5C2B6A35CB008F7C3B /* HistoryTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87F5B2B6A35CB008F7C3B /* HistoryTransaction.swift */; };
+		B9F87F5F2B6A3689008F7C3B /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87F5E2B6A3689008F7C3B /* HistoryTableViewCell.swift */; };
+		B9F87F612B6A3797008F7C3B /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87F602B6A3797008F7C3B /* HistoryViewModel.swift */; };
+		B9F87F662B6A80AC008F7C3B /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87F652B6A80AC008F7C3B /* HomeModule.swift */; };
+		B9F87F682B6A80B2008F7C3B /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87F672B6A80B2008F7C3B /* HomeRouter.swift */; };
+		B9F87F6A2B6A834E008F7C3B /* QRCodeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87F692B6A834D008F7C3B /* QRCodeModule.swift */; };
+		B9F87F6C2B6A8354008F7C3B /* QRCodeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87F6B2B6A8354008F7C3B /* QRCodeRouter.swift */; };
+		B9F87F962B6B7F6A008F7C3B /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87F952B6B7F6A008F7C3B /* ChartType.swift */; };
+		B9F87FA02B6B8DC2008F7C3B /* profileResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B9F87F9F2B6B8DC2008F7C3B /* profileResponse.json */; };
+		B9F87FA22B6B8E06008F7C3B /* chartResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B9F87FA12B6B8E06008F7C3B /* chartResponse.json */; };
+		B9F87FA72B6BA46B008F7C3B /* DetailTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87FA52B6BA46B008F7C3B /* DetailTransactionViewController.swift */; };
+		B9F87FA82B6BA46B008F7C3B /* DetailTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F87FA62B6BA46B008F7C3B /* DetailTransactionViewController.xib */; };
+		B9F87FAB2B6BA527008F7C3B /* DetailTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87FA92B6BA527008F7C3B /* DetailTransactionTableViewCell.swift */; };
+		B9F87FAC2B6BA527008F7C3B /* DetailTransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F87FAA2B6BA527008F7C3B /* DetailTransactionTableViewCell.xib */; };
+		B9F87FAE2B6BA64D008F7C3B /* DetailTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F87FAD2B6BA64D008F7C3B /* DetailTransactionViewModel.swift */; };
+		C1DF7AB6B8CD91F55AB056CA /* Pods_QRCodeApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611ED1E120ACE6C8D1CE0883 /* Pods_QRCodeApps.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		611ED1E120ACE6C8D1CE0883 /* Pods_QRCodeApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRCodeApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FE6E782446067DB843F41C /* Pods-QRCodeApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeApps.debug.xcconfig"; path = "Target Support Files/Pods-QRCodeApps/Pods-QRCodeApps.debug.xcconfig"; sourceTree = "<group>"; };
+		B7DD196224CEB823746753E2 /* Pods-QRCodeApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeApps.release.xcconfig"; path = "Target Support Files/Pods-QRCodeApps/Pods-QRCodeApps.release.xcconfig"; sourceTree = "<group>"; };
 		B947A1B92B69247500726C68 /* QRCodeApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B947A1BC2B69247500726C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B947A1BE2B69247500726C68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B947A1C02B69247500726C68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B947A1C32B69247500726C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B947A1C02B69247500726C68 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		B947A1C52B69247700726C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B947A1C82B69247700726C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B947A1CA2B69247700726C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B947A1DD2B69279900726C68 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B947A1DF2B6927A100726C68 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		B947A1E12B6929BD00726C68 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		B947A1E52B692A0F00726C68 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B947A1E82B692CF900726C68 /* APIClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientManager.swift; sourceTree = "<group>"; };
+		B947A1EA2B692D6600726C68 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B947A1EC2B692DCC00726C68 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		B947A1EE2B692E7900726C68 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B947A1F12B692F4100726C68 /* InjectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionManager.swift; sourceTree = "<group>"; };
+		B947A1F42B692F7500726C68 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		B947A1F62B692FD200726C68 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		B947A1FB2B6930E400726C68 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		B947A1FD2B69312D00726C68 /* HomeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoint.swift; sourceTree = "<group>"; };
+		B947A2002B693C6600726C68 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B947A2022B693DB000726C68 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		B947A2042B693F2100726C68 /* ProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCard.swift; sourceTree = "<group>"; };
+		B947A20B2B6942F400726C68 /* UtilsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsManager.swift; sourceTree = "<group>"; };
+		B947A20D2B694ED500726C68 /* CButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CButton.swift; sourceTree = "<group>"; };
+		B947A20F2B6952E900726C68 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B947A2142B69EE7B00726C68 /* ScannerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerManager.swift; sourceTree = "<group>"; };
+		B947A2182B69F47600726C68 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		B9F87F502B6A082A008F7C3B /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		B9F87F522B6A0EE0008F7C3B /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		B9F87F552B6A0F58008F7C3B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B9F87F582B6A0FE7008F7C3B /* QRCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewModel.swift; sourceTree = "<group>"; };
+		B9F87F5B2B6A35CB008F7C3B /* HistoryTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransaction.swift; sourceTree = "<group>"; };
+		B9F87F5E2B6A3689008F7C3B /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		B9F87F602B6A3797008F7C3B /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		B9F87F652B6A80AC008F7C3B /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		B9F87F672B6A80B2008F7C3B /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		B9F87F692B6A834D008F7C3B /* QRCodeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeModule.swift; sourceTree = "<group>"; };
+		B9F87F6B2B6A8354008F7C3B /* QRCodeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeRouter.swift; sourceTree = "<group>"; };
+		B9F87F952B6B7F6A008F7C3B /* ChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartType.swift; sourceTree = "<group>"; };
+		B9F87F9F2B6B8DC2008F7C3B /* profileResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = profileResponse.json; sourceTree = "<group>"; };
+		B9F87FA12B6B8E06008F7C3B /* chartResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chartResponse.json; sourceTree = "<group>"; };
+		B9F87FA52B6BA46B008F7C3B /* DetailTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewController.swift; sourceTree = "<group>"; };
+		B9F87FA62B6BA46B008F7C3B /* DetailTransactionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTransactionViewController.xib; sourceTree = "<group>"; };
+		B9F87FA92B6BA527008F7C3B /* DetailTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionTableViewCell.swift; sourceTree = "<group>"; };
+		B9F87FAA2B6BA527008F7C3B /* DetailTransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTransactionTableViewCell.xib; sourceTree = "<group>"; };
+		B9F87FAD2B6BA64D008F7C3B /* DetailTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +113,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DF7AB6B8CD91F55AB056CA /* Pods_QRCodeApps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BE582F39CAED0071BBE2213 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				611ED1E120ACE6C8D1CE0883 /* Pods_QRCodeApps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B947A1B02B69247500726C68 = {
 			isa = PBXGroup;
 			children = (
 				B947A1BB2B69247500726C68 /* QRCodeApps */,
 				B947A1BA2B69247500726C68 /* Products */,
+				CC87DEF603E940482DD78FBB /* Pods */,
+				7BE582F39CAED0071BBE2213 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +149,303 @@
 		B947A1BB2B69247500726C68 /* QRCodeApps */ = {
 			isa = PBXGroup;
 			children = (
-				B947A1BC2B69247500726C68 /* AppDelegate.swift */,
-				B947A1BE2B69247500726C68 /* SceneDelegate.swift */,
-				B947A1C02B69247500726C68 /* ViewController.swift */,
-				B947A1C22B69247500726C68 /* Main.storyboard */,
-				B947A1C52B69247700726C68 /* Assets.xcassets */,
-				B947A1C72B69247700726C68 /* LaunchScreen.storyboard */,
+				B947A1D32B6925A200726C68 /* Managers */,
+				B947A1D22B69258600726C68 /* Extensions */,
+				B947A1D82B6926A700726C68 /* CustomUIKit */,
+				B947A1D12B69258300726C68 /* Features */,
+				B947A1D02B69257900726C68 /* Core */,
 				B947A1CA2B69247700726C68 /* Info.plist */,
 			);
 			path = QRCodeApps;
+			sourceTree = "<group>";
+		};
+		B947A1D02B69257900726C68 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B947A1C02B69247500726C68 /* MainTabViewController.swift */,
+				B947A1C52B69247700726C68 /* Assets.xcassets */,
+				B947A1C72B69247700726C68 /* LaunchScreen.storyboard */,
+				B947A1BC2B69247500726C68 /* AppDelegate.swift */,
+				B947A1BE2B69247500726C68 /* SceneDelegate.swift */,
+				B947A1F62B692FD200726C68 /* AppDependencies.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B947A1D12B69258300726C68 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F4D2B6A0804008F7C3B /* Transaction */,
+				B947A2162B69F44F00726C68 /* QRCodeScanner */,
+				B947A1D42B69266800726C68 /* Home */,
+				B947A1D52B69266C00726C68 /* History */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B947A1D22B69258600726C68 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B947A2022B693DB000726C68 /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B947A1D32B6925A200726C68 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B947A2132B69EE7400726C68 /* ScannerManager */,
+				B947A20A2B6942E800726C68 /* UtilsManager */,
+				B947A1F02B692F2A00726C68 /* InjectionManager */,
+				B947A1E72B692CE400726C68 /* APIClientManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B947A1D42B69266800726C68 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F622B6A7FA4008F7C3B /* Router */,
+				B947A1FF2B693C4200726C68 /* Views */,
+				B947A1D92B6926DE00726C68 /* ViewController */,
+				B947A1D72B69268F00726C68 /* ViewModels */,
+				B947A1D62B69268700726C68 /* Models */,
+				B947A1FA2B6930C600726C68 /* Repository */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B947A1D52B69266C00726C68 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F5D2B6A3675008F7C3B /* Views */,
+				B947A1DC2B6926EB00726C68 /* ViewController */,
+				B947A1DB2B6926E800726C68 /* ViewModels */,
+				B947A1DA2B6926E500726C68 /* Models */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		B947A1D62B69268700726C68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87FA12B6B8E06008F7C3B /* chartResponse.json */,
+				B9F87F9F2B6B8DC2008F7C3B /* profileResponse.json */,
+				B947A1E12B6929BD00726C68 /* Profile.swift */,
+				B9F87F952B6B7F6A008F7C3B /* ChartType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B947A1D72B69268F00726C68 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B947A1E52B692A0F00726C68 /* HomeViewModel.swift */,
+				B9F87FAD2B6BA64D008F7C3B /* DetailTransactionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B947A1D82B6926A700726C68 /* CustomUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B947A2002B693C6600726C68 /* CardView.swift */,
+				B947A20D2B694ED500726C68 /* CButton.swift */,
+			);
+			path = CustomUIKit;
+			sourceTree = "<group>";
+		};
+		B947A1D92B6926DE00726C68 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B947A1DD2B69279900726C68 /* HomeViewController.swift */,
+				B9F87FA52B6BA46B008F7C3B /* DetailTransactionViewController.swift */,
+				B9F87FA62B6BA46B008F7C3B /* DetailTransactionViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B947A1DA2B6926E500726C68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F5B2B6A35CB008F7C3B /* HistoryTransaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B947A1DB2B6926E800726C68 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F602B6A3797008F7C3B /* HistoryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B947A1DC2B6926EB00726C68 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B947A1DF2B6927A100726C68 /* HistoryViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B947A1E72B692CE400726C68 /* APIClientManager */ = {
+			isa = PBXGroup;
+			children = (
+				B947A1E82B692CF900726C68 /* APIClientManager.swift */,
+				B947A1EC2B692DCC00726C68 /* MockAPIClient.swift */,
+				B947A1EA2B692D6600726C68 /* Endpoint.swift */,
+				B947A1EE2B692E7900726C68 /* NetworkError.swift */,
+			);
+			path = APIClientManager;
+			sourceTree = "<group>";
+		};
+		B947A1F02B692F2A00726C68 /* InjectionManager */ = {
+			isa = PBXGroup;
+			children = (
+				B947A1F12B692F4100726C68 /* InjectionManager.swift */,
+				B947A1F42B692F7500726C68 /* Injectable.swift */,
+			);
+			path = InjectionManager;
+			sourceTree = "<group>";
+		};
+		B947A1FA2B6930C600726C68 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B947A1FB2B6930E400726C68 /* HomeRepository.swift */,
+				B947A1FD2B69312D00726C68 /* HomeEndpoint.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B947A1FF2B693C4200726C68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B947A2042B693F2100726C68 /* ProfileCard.swift */,
+				B947A20F2B6952E900726C68 /* HomeView.swift */,
+				B9F87FA92B6BA527008F7C3B /* DetailTransactionTableViewCell.swift */,
+				B9F87FAA2B6BA527008F7C3B /* DetailTransactionTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B947A20A2B6942E800726C68 /* UtilsManager */ = {
+			isa = PBXGroup;
+			children = (
+				B947A20B2B6942F400726C68 /* UtilsManager.swift */,
+			);
+			path = UtilsManager;
+			sourceTree = "<group>";
+		};
+		B947A2132B69EE7400726C68 /* ScannerManager */ = {
+			isa = PBXGroup;
+			children = (
+				B947A2142B69EE7B00726C68 /* ScannerManager.swift */,
+			);
+			path = ScannerManager;
+			sourceTree = "<group>";
+		};
+		B947A2162B69F44F00726C68 /* QRCodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F632B6A7FAF008F7C3B /* Router */,
+				B947A2172B69F45D00726C68 /* ViewController */,
+				B9F87F572B6A0FD8008F7C3B /* ViewModels */,
+			);
+			path = QRCodeScanner;
+			sourceTree = "<group>";
+		};
+		B947A2172B69F45D00726C68 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B947A2182B69F47600726C68 /* QRCodeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B9F87F4D2B6A0804008F7C3B /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F642B6A7FB4008F7C3B /* Router */,
+				B9F87F4E2B6A0813008F7C3B /* ViewController */,
+				B9F87F4F2B6A0816008F7C3B /* ViewModels */,
+				B9F87F542B6A0F35008F7C3B /* Models */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		B9F87F4E2B6A0813008F7C3B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F502B6A082A008F7C3B /* TransactionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B9F87F4F2B6A0816008F7C3B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F522B6A0EE0008F7C3B /* TransactionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B9F87F542B6A0F35008F7C3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F552B6A0F58008F7C3B /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9F87F572B6A0FD8008F7C3B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F582B6A0FE7008F7C3B /* QRCodeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B9F87F5D2B6A3675008F7C3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F5E2B6A3689008F7C3B /* HistoryTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9F87F622B6A7FA4008F7C3B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F652B6A80AC008F7C3B /* HomeModule.swift */,
+				B9F87F672B6A80B2008F7C3B /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B9F87F632B6A7FAF008F7C3B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B9F87F692B6A834D008F7C3B /* QRCodeModule.swift */,
+				B9F87F6B2B6A8354008F7C3B /* QRCodeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B9F87F642B6A7FB4008F7C3B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CC87DEF603E940482DD78FBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98FE6E782446067DB843F41C /* Pods-QRCodeApps.debug.xcconfig */,
+				B7DD196224CEB823746753E2 /* Pods-QRCodeApps.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +455,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B947A1CD2B69247700726C68 /* Build configuration list for PBXNativeTarget "QRCodeApps" */;
 			buildPhases = (
+				84483C727AE2847F0E15CD8B /* [CP] Check Pods Manifest.lock */,
 				B947A1B52B69247500726C68 /* Sources */,
 				B947A1B62B69247500726C68 /* Frameworks */,
 				B947A1B72B69247500726C68 /* Resources */,
+				9CC971C1D981ADF85A549EA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +486,7 @@
 				};
 			};
 			buildConfigurationList = B947A1B42B69247500726C68 /* Build configuration list for PBXProject "QRCodeApps" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,36 +508,109 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F87FA02B6B8DC2008F7C3B /* profileResponse.json in Resources */,
+				B9F87FAC2B6BA527008F7C3B /* DetailTransactionTableViewCell.xib in Resources */,
 				B947A1C92B69247700726C68 /* LaunchScreen.storyboard in Resources */,
+				B9F87FA22B6B8E06008F7C3B /* chartResponse.json in Resources */,
 				B947A1C62B69247700726C68 /* Assets.xcassets in Resources */,
-				B947A1C42B69247500726C68 /* Main.storyboard in Resources */,
+				B9F87FA82B6BA46B008F7C3B /* DetailTransactionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84483C727AE2847F0E15CD8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QRCodeApps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC971C1D981ADF85A549EA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QRCodeApps/Pods-QRCodeApps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QRCodeApps/Pods-QRCodeApps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QRCodeApps/Pods-QRCodeApps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B947A1B52B69247500726C68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B947A1C12B69247500726C68 /* ViewController.swift in Sources */,
+				B947A1C12B69247500726C68 /* MainTabViewController.swift in Sources */,
+				B947A1EB2B692D6600726C68 /* Endpoint.swift in Sources */,
+				B947A20E2B694ED500726C68 /* CButton.swift in Sources */,
+				B9F87FAE2B6BA64D008F7C3B /* DetailTransactionViewModel.swift in Sources */,
+				B9F87FAB2B6BA527008F7C3B /* DetailTransactionTableViewCell.swift in Sources */,
+				B9F87F6A2B6A834E008F7C3B /* QRCodeModule.swift in Sources */,
+				B947A2152B69EE7B00726C68 /* ScannerManager.swift in Sources */,
+				B947A1F72B692FD200726C68 /* AppDependencies.swift in Sources */,
+				B947A1E22B6929BD00726C68 /* Profile.swift in Sources */,
+				B947A2102B6952E900726C68 /* HomeView.swift in Sources */,
+				B947A1E62B692A0F00726C68 /* HomeViewModel.swift in Sources */,
 				B947A1BD2B69247500726C68 /* AppDelegate.swift in Sources */,
 				B947A1BF2B69247500726C68 /* SceneDelegate.swift in Sources */,
+				B9F87F682B6A80B2008F7C3B /* HomeRouter.swift in Sources */,
+				B947A1FE2B69312D00726C68 /* HomeEndpoint.swift in Sources */,
+				B947A1E92B692CF900726C68 /* APIClientManager.swift in Sources */,
+				B9F87F5C2B6A35CB008F7C3B /* HistoryTransaction.swift in Sources */,
+				B947A20C2B6942F400726C68 /* UtilsManager.swift in Sources */,
+				B9F87F612B6A3797008F7C3B /* HistoryViewModel.swift in Sources */,
+				B9F87F532B6A0EE0008F7C3B /* TransactionViewModel.swift in Sources */,
+				B947A1F52B692F7500726C68 /* Injectable.swift in Sources */,
+				B947A1E02B6927A100726C68 /* HistoryViewController.swift in Sources */,
+				B947A1FC2B6930E400726C68 /* HomeRepository.swift in Sources */,
+				B9F87FA72B6BA46B008F7C3B /* DetailTransactionViewController.swift in Sources */,
+				B9F87F562B6A0F58008F7C3B /* Transaction.swift in Sources */,
+				B947A1DE2B69279900726C68 /* HomeViewController.swift in Sources */,
+				B947A1EF2B692E7900726C68 /* NetworkError.swift in Sources */,
+				B947A2192B69F47600726C68 /* QRCodeViewController.swift in Sources */,
+				B947A1ED2B692DCC00726C68 /* MockAPIClient.swift in Sources */,
+				B9F87F512B6A082A008F7C3B /* TransactionViewController.swift in Sources */,
+				B9F87F5F2B6A3689008F7C3B /* HistoryTableViewCell.swift in Sources */,
+				B9F87F662B6A80AC008F7C3B /* HomeModule.swift in Sources */,
+				B947A2032B693DB000726C68 /* UIColor+Ext.swift in Sources */,
+				B947A2012B693C6600726C68 /* CardView.swift in Sources */,
+				B947A2052B693F2100726C68 /* ProfileCard.swift in Sources */,
+				B9F87F962B6B7F6A008F7C3B /* ChartType.swift in Sources */,
+				B9F87F592B6A0FE7008F7C3B /* QRCodeViewModel.swift in Sources */,
+				B947A1F22B692F4100726C68 /* InjectionManager.swift in Sources */,
+				B9F87F6C2B6A8354008F7C3B /* QRCodeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B947A1C22B69247500726C68 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B947A1C32B69247500726C68 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B947A1C72B69247700726C68 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,19 +743,21 @@
 		};
 		B947A1CE2B69247700726C68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98FE6E782446067DB843F41C /* Pods-QRCodeApps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7PZ5QJDFQN;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QRCodeApps/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,19 +773,21 @@
 		};
 		B947A1CF2B69247700726C68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7DD196224CEB823746753E2 /* Pods-QRCodeApps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7PZ5QJDFQN;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QRCodeApps/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
